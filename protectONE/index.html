@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="sub-container">
+        <!-- BOX FIRST START -->
+
+        <div class="box " id="boxOne" onclick="openForm()">
+          <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Sign Up Form</h1>
+
+              <div class="center">
+                <label for="">Name</label><br>
+                <input type="text" placeholder="Name" class="input-box" id="name" />
+              </div>
+
+              <div class="center">
+                <label for="">Email</label><br>
+                <input type="text" placeholder="Email" class="input-box" id="email" />
+              </div>
+
+              <div class="center">
+                <label for="">User Name</label>
+                <input type="text" placeholder="User Name" class="input-box" id="username" />
+              </div>
+
+              <div class="center">
+                <button class="SignBtn" onclick="saveData()">Sign Up</button>
+                <button class="backBtn" onclick="back()">Back</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- BOX FIRST END -->
+
+
+        <!-- USER LOGIN BOX START -->
+        <div class="box" id="boxTwo" onclick="loginForm()">
+
+          <div class="form-logiPpopup" id="myLoginForm">
+            <form class="form-loginContainer">
+              <h1>User info</h1>
+
+              <div class="center">
+                <label for="">Name</label><br>
+                <label for="" id="name"></label>
+              </div>
+
+
+
+              <div class="center">
+                <label for="">User Name</label>
+                <label for="" id="Username="></label>
+                <!-- <input type="text" placeholder="User Name" class="input-box" id="username" /> -->
+              </div>
+
+              <button class="btn">Back</button>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="box" id="boxThree">
+          <div class="wrapper">
+            <div class=" dieOneImg">
+              <img src="images/one.png" alt="" id="dieOne">
+            </div>
+            <div class="dieTwoImg">
+              <img src="images/two.png" alt="" id="dieTwo">
+            </div>
+          </div>
+          <div>
+            <h3 id="total" class="total">Total=</h3>
+            <button class="rollBtn" onclick="roll()">Roll Die</button>
+          </div>
+        </div>
+
+
+
+        <div class="box" id="boxFour" onclick="getCoupenCode()">
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>

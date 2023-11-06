@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00A9FF;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+
+}
+
+.sub-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.box {
+  width: 30%;
+
+  height: 400px;
+  border-radius: 15px;
+}
+
+#boxOne {
+  background: url('images/signup.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+#boxOne:hover {
+  background-color: rgb(255, 217, 3);
+  box-shadow: 5px 5px black;
+}
+
+#boxTwo {
+  background: url('images/login.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#boxTwo:hover {
+  box-shadow: 5px 5px black;
+}
+
+.btn {
+  background-color: #00A9FF;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  width: 50%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+#boxThree {
+  background: url('images/threeBox.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#boxThree:hover {
+  box-shadow: 5px 5px black;
+}
+
+#boxFour {
+  background: url('images/cupon.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+#boxFour:hover {
+  box-shadow: 0px 15px 15px 0px black;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 180px;
+  left: 500px;
+  z-index: 9;
+}
+
+.form-container {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #00A9FF;
+  box-shadow: 5px 5px black;
+  color: white;
+}
+
+.SignBtn {
+  width: 50%;
+  height: 50px;
+  padding: 5px;
+  background-color: #89CFF3;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.backBtn {
+  width: 50%;
+  height: 40px;
+  padding: 5px;
+  background-color: #89CFF3;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.SignBtn :hover {
+  background-color: rgb(255, 187, 0);
+  color: black;
+  box-shadow: 5px 5px black;
+}
+
+.center {
+  text-align: center;
+}
+
+.input-box {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 5px black;
+  padding: 10px;
+}
+
+
+
+.form-logiPpopup {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 550px;
+  border: 3px solid #f1f1f1;
+}
+
+.form-loginContainer {
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #89CFF3;
+  color: white;
+  box-shadow: 5px 5px black;
+}
+
+.loginBtn {
+  width: 50%;
+  height: 40px;
+  padding: 5px;
+  background-color: #89CFF3;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.dieOneImg>img {
+  width: 50px;
+}
+
+.dieTwoImg>img {
+  width: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+  top: 300px;
+  left: 80px;
+
+}
+
+.rollBtn {
+  background-color: #00A9FF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  top: 300px;
+  left: 100px;
+  cursor: pointer;
+}
+
+.shake {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+.total {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:700px) {
+
+
+  .sub-container {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 190px;
+    z-index: 9;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+  }
+
+  .dieOneImg>img {
+    width: 50px;
+  }
+
+  .dieTwoImg>img {
+    width: 50px;
+  }
+
+  .rollBtn {
+    background-color: #00A9FF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    top: 150px;
+    left: 30px;
+  }
+}

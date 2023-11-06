@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="weatherBox">
+      <h1 class="heading">Weather Api </h1>
+
+      <div class="center">
+        <button class="btnFetch" onclick="getLocation()">Fetch Data</button>
+
+
+      </div>
+    </div>
+    <div class="map" id="showmap">
+      <iframe src="https://maps.google.com/maps?q=29.151621, 79.508636&z=15&output=embed" width="600" height="270"
+        frameborder="0" style="border:0"></iframe>
+    </div>
+
+    <table border="2" id="apiDataTable">
+      <caption>Weather Data</caption>
+      <thead>
+
+        <tr>
+          <td>Location</td>
+          <td>latitude</td>
+          <td>longitude</td>
+          <td>Time Zone</td>
+        </tr>
+      </thead>
+      <tbody id="geoLocation-table-body">
+
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
